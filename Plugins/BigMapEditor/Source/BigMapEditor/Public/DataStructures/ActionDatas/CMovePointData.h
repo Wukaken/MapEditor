@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ActionDatas/CAnimationData.h"
+#include "CAnimationData.h"
 #include "CMovePointData.generated.h"
 
 /**

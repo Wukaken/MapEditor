@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ActionDatas/CSingleCrowdActorData.h"
+#include "CSingleCrowdActorData.h"
 #include "CBornCrowdData.generated.h"
 
 /**

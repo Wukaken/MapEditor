@@ -20,8 +20,11 @@ public:
 	TArray<FString>	TrackList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString DialogDataAssetPath;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FCSingleTrackData CameraTrackData;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FCSingleTrackData> TrackDataInfo;
+	TMap<FString, FCSingleTrackData> TrackDataInfo;
 };
