@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CAnimationData.h"
 #include "CDialogData.generated.h"
 
 /**
@@ -14,8 +15,11 @@ struct FCDialogData
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int SRowID;
+	FString DialogKey;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int ERowID;
+	FCAnimationData AnimData;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool ActionLoop;
 };
