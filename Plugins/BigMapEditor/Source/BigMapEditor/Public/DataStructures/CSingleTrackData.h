@@ -16,6 +16,7 @@
 #include "ActionDatas/CRotateData.h"
 #include "ActionDatas/CWaitFinishData.h"
 #include "ActionDatas/CFindAttackData.h"
+#include "ActionDatas/CMediaData.h"
 #include "CSingleTrackData.generated.h"
 
 /**
@@ -64,6 +65,9 @@ struct FCSingleTrackData
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FCFindAttackData> FindAttackDatas;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FCMediaData> MediaDatas;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FString> DataTypes;
